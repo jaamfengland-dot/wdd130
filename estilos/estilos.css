@@ -14,8 +14,6 @@ body {
 
 main {
     max-width: 840px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 main img {
@@ -32,15 +30,13 @@ nav {
 }
 
 nav a {
-    color: rgb(2, 2, 4);
+    color: rgb(11, 7, 18);
     display: block;
     padding: 20px;
-    text-decoration: none;
 }
 
 h1 {
     color: rgb(2, 2, 55);
-    margin-bottom: 15px;
 }
 
 img {
@@ -57,7 +53,7 @@ p {
 
 aside {
     width: 20em;
-    margin: 1em auto;
+    margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
     background-color: #eee;
@@ -74,15 +70,7 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 10px;
 }
-
-
-
-
-
-
-
 
 
 
