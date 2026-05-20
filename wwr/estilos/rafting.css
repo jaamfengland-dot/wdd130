@@ -26,8 +26,8 @@ nav, p, section, article {
   padding: 8px;
 }
 
-.redes-sociais a {
-    text-decoration: none;
+.socialmedia a {
+  text-decoration: none;
 }
 
 .hero {
@@ -38,7 +38,7 @@ nav, p, section, article {
     width: 100%;
     height: auto;
   }
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -46,12 +46,13 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--cor-destaque1);
-  color: #0b3125; /* texto branco – certifique-se de que haja contraste suficiente com a cor de fundo */
+  color: #fff;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
+.hero article {
+  position: absolute;
+  top: 120px;
+  right: 20px;
 }
 
 :root {
@@ -61,4 +62,13 @@ h1 {
   --cor-destaque2: #e9c46a; /* amarelo-claro dourado */
   --fonte-titulo: "Times New Roman", "Georgia", serif;
   --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: var(--cor-secundaria);
+}
+
+.hero article {
+  background-color: var(--cor-destaque2);
+  padding: 10px;
 }
