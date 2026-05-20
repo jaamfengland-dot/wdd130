@@ -53,6 +53,7 @@ nav, p, section, article {
   position: absolute;
   top: 120px;
   right: 20px;
+  float: right
 }
 
 :root {
