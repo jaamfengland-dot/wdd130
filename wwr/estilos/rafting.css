@@ -37,6 +37,7 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    float: right
   }
 .hero h1 {
   position: absolute;
