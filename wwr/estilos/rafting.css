@@ -50,28 +50,34 @@ nav, p, section, article {
 
 .hero article {
   position: absolute;
+
   top: 120px;
+
   right: 20px;
- 
+
+  background-color: var(--cor-destaque2);
+
+  padding: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
 }
 
 :root {
-  --cor-primaria: #055a05; /* verde-floresta */
-  --cor-secundaria: #f4a261; /* bege médio */
-  --cor-destaque1: #264653; /* azul-escuro acinzentado */
-  --cor-destaque2: #e9c46a; /* amarelo-claro dourado */
-  --fonte-titulo: "Times New Roman", "Georgia", serif;
+  --cor-primaria: #055a05;
+  --cor-secundaria: #f4a261;
+  --cor-destaque1: #264653;
+  --cor-destaque2: #e9c46a;
+  --cor-branca: #ffffff;
+
+  --fonte-titulo: "Times New Roman", Georgia, serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-footer {
-  background-color: var(--cor-secundaria);
-}
 
-.hero article {
-  background-color: var(--cor-destaque2);
-  padding: 10px;
-}
 header {
     display: grid;
 
