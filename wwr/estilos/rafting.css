@@ -1,69 +1,8 @@
+/* Configurações Globais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: var(--fonte-body);
-  color: var(--cor-destaque1);
-}
-
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--fonte-titulo);
-  color: var(--cor-primaria);
-  text-align: center;
-
-}
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-.hero article img {
-    width: 150px;
-    height: auto;
-}
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--cor-destaque1);
-  color: var(--cor-branca);
-}
-
-.hero article {
-  position: absolute;
-
-  top: 120px;
-
-  right: 20px;
-
-  background-color: var(--cor-destaque2);
-
-  padding: 10px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 1rem;
 }
 
 :root {
@@ -71,51 +10,168 @@ nav, p, section, article {
   --cor-secundaria: #f4a261;
   --cor-destaque1: #264653;
   --cor-destaque2: #e9c46a;
-  color: var(--cor-branca);
+  --cor-cinza-claro: #e0e0e0;
+  --cor-branca: #ffffff;
 
   --fonte-titulo: "Times New Roman", Georgia, serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
 
+body {
+  font-family: var(--fonte-body);
+  background-color: #f9f9f9;
+}
 
+/* Limitador de Largura */
+header, main, footer {
+  width: 840px;
+  margin: 20px auto; 
+}
+
+h1, h2 {
+  font-family: var(--fonte-titulo);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* HEADER (Cabeçalho) */
 header {
-    display: grid;
-
-    grid-template-columns: 200px 1fr;
-
-    align-items: center;
-
-    background-color: var(--cor-destaque1);
-
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  background-color: var(--cor-cinza-claro); /* Cor cinza do wireframe */
+  padding: 1rem;
+  border: 1px solid #999;
 }
-nav a {
-    text-decoration: none;
 
-    color: var(--cor-branca);
-
-    font-weight: bold;
-
-    padding: 0.5rem 1rem;
-}
 nav ul {
-    display: flex;
-
-    justify-content: space-evenly;
-
-    align-items: center;
-
-    list-style: none;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 15px;
+  list-style: none;
 }
 
+nav a {
+  text-decoration: none;
+  color: #000;
+  background-color: var(--cor-branca);
+  padding: 0.5rem 1rem;
+  border: 1px solid #999;
+}
+
+/* SECTION HERO banner principal */
+.hero {
+  border: 1px solid #999;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  margin-top: 10px;
+  color: #000;
+}
+
+.hero article {
+  border: 1px solid #999;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.hero article img {
+  width: 100px;
+  height: auto;
+  border: 1px solid #999;
+}
+
+/* SECTION história*/
+.historia-section {
+  border: 1px solid #999;
+  background-color: var(--cor-cinza-claro);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.historia-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.historia-container p {
+  flex: 1;
+  text-align: justify;
+}
+
+.img-historia {
+  width: 180px;
+  height: auto;
+  border: 1px solid #000;
+}
+
+/* SECTION AVENTURA imagens */
+.aventura-section {
+  border: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.galeria figure {
+  flex: 1;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #999;
+  background-color: var(--cor-cinza-claro);
+  padding: 5px;
+}
+
+.galeria figcaption {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* FOOTER Rodapé */
 footer {
-    background-color: var(--cor-secundaria);
+  background-color: var(--cor-cinza-claro);
+  border: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
 
-    display: flex;
+footer p {
+  color: #000;
+}
 
-    justify-content: space-between;
+.socialmedia {
+  display: flex;
+  gap: 10px;
+}
 
-    align-items: center;
-
-    padding: 1rem;
+.socialmedia img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  background-color: var(--cor-branca);
 }
