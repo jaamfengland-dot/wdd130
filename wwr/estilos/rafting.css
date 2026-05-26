@@ -89,8 +89,9 @@ nav a {
   bottom: 20px;       
   left: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.9); 
-  border: 1px solid var(--cor-secundaria);   
+  background-color: var(--cor-destaque2); 
+  border: 1px solid var(--cor-destaque1);   
+  
   padding: 15px;
   display: flex;
   align-items: center;
