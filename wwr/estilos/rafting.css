@@ -19,7 +19,7 @@
 
 body {
   font-family: var(--fonte-body);
-  background-color: #f9f9f9;
+  background-color: #a49c9c;
 }
 
 /* Limitador de Largura */
@@ -41,7 +41,7 @@ header {
   align-items: center;
   background-color: var(--cor-cinza-claro); /* Cor cinza do wireframe */
   padding: 1rem;
-  border: 1px solid #999;
+  border: 1px solid #35442a;
 }
 
 nav ul {
@@ -116,7 +116,7 @@ nav a {
 .img-historia {
   width: 180px;
   height: auto;
-  border: 1px solid #000;
+  border: 1px solid #2d1137;
 }
 
 /* SECTION AVENTURA imagens */
