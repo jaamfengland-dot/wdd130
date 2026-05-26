@@ -10,8 +10,8 @@
   --cor-secundaria: #f4a261;
   --cor-destaque1: #264653;
   --cor-destaque2: #e9c46a;
-  --cor-cinza-claro: #e0e0e0;
   --cor-branca: #ffffff;
+  --cor-cinza-claro: #e0e0e0; /* Mantida para o fundo dos blocos do wireframe */
 
   --fonte-titulo: "Times New Roman", Georgia, serif;
   --fonte-body: Arial, Helvetica, sans-serif;
@@ -19,13 +19,13 @@
 
 body {
   font-family: var(--fonte-body);
-  background-color: #a49c9c;
+  background-color: var(--cor-branca);
 }
 
-/* Limitador de Largura */
+/* Limitador de Largura do Layout */
 header, main, footer {
   width: 840px;
-  margin: 20px auto; 
+  margin: 20px auto;
 }
 
 h1, h2 {
@@ -39,9 +39,9 @@ header {
   display: grid;
   grid-template-columns: 200px 1fr;
   align-items: center;
-  background-color: var(--cor-cinza-claro); /* Cor cinza do wireframe */
+  background-color: var(--cor-cinza-claro); 
   padding: 1rem;
-  border: 1px solid #35442a;
+  border: 1px solid var(--cor-destaque1);
 }
 
 nav ul {
@@ -53,19 +53,18 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: var(--cor-destaque1); /* Usando a variável */
   background-color: var(--cor-branca);
   padding: 0.5rem 1rem;
-  border: 1px solid #999;
+  border: 1px solid var(--cor-destaque1);
 }
 
-/* SECTION HERO banner principal */
+/* ❌ CORREÇÃO: Sobreposição do Hero */
 .hero {
-  border: 1px solid #999;
-  padding: 20px;
-  position: relative;
-  text-align: center;
+  position: relative; /* OBRIGATÓRIO: Pai relativo */
+  width: 100%;
   margin-bottom: 20px;
+  border: 1px solid var(--cor-destaque1);
 }
 
 .hero > img {
@@ -75,31 +74,49 @@ nav a {
 }
 
 .hero h1 {
-  margin-top: 10px;
-  color: #000;
+  position: absolute; /* OBRIGATÓRIO: Filho absoluto */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o título perfeitamente por cima da imagem */
+  color: var(--cor-primaria);  /* Usando a variável */
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo leve para não sumir na foto */
+  padding: 5px 15px;
+  border-radius: 4px;
 }
 
 .hero article {
-  border: 1px solid #999;
+  position: absolute; /* OBRIGATÓRIO: Filho absoluto */
+  bottom: 20px;       /* Posiciona na parte de baixo do banner */
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo para legibilidade */
+  border: 1px solid var(--cor-secundaria);   /* Usando a variável */
   padding: 15px;
   display: flex;
   align-items: center;
   gap: 15px;
-  text-align: left;
+}
+
+.hero article p {
+  color: var(--cor-destaque1); /* Usando a variável */
 }
 
 .hero article img {
   width: 100px;
   height: auto;
-  border: 1px solid #999;
+  border: 1px solid var(--cor-destaque1);
 }
 
-/* SECTION história*/
+/* SECTION HISTÓRIA */
 .historia-section {
-  border: 1px solid #999;
+  border: 1px solid var(--cor-destaque1);
   background-color: var(--cor-cinza-claro);
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.historia-section h2 {
+  color: var(--cor-primaria); /* Usando a variável */
 }
 
 .historia-container {
@@ -111,19 +128,24 @@ nav a {
 .historia-container p {
   flex: 1;
   text-align: justify;
+  color: var(--cor-destaque1); /* Usando a variável */
 }
 
 .img-historia {
   width: 180px;
   height: auto;
-  border: 1px solid #2d1137;
+  border: 1px solid var(--cor-destaque1);
 }
 
-/* SECTION AVENTURA imagens */
+/* SECTION AVENTURA */
 .aventura-section {
-  border: 1px solid #999;
+  border: 1px solid var(--cor-destaque1);
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.aventura-section h2 {
+  color: var(--cor-primaria); /* Usando a variável */
 }
 
 .galeria {
@@ -140,7 +162,7 @@ nav a {
 .galeria img {
   width: 100%;
   height: auto;
-  border: 1px solid #999;
+  border: 1px solid var(--cor-destaque1);
   background-color: var(--cor-cinza-claro);
   padding: 5px;
 }
@@ -148,12 +170,13 @@ nav a {
 .galeria figcaption {
   margin-top: 5px;
   font-size: 14px;
+  color: var(--cor-destaque1); /* Usando a variável */
 }
 
-/* FOOTER Rodapé */
+/* FOOTER (Rodapé) */
 footer {
-  background-color: var(--cor-cinza-claro);
-  border: 1px solid #999;
+  background-color: var(--cor-secundaria); /* Usando a variável */
+  border: 1px solid var(--cor-destaque1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,7 +184,7 @@ footer {
 }
 
 footer p {
-  color: #000;
+  color: var(--cor-branca); /* Usando a variável */
 }
 
 .socialmedia {
@@ -172,6 +195,6 @@ footer p {
 .socialmedia img {
   width: 40px;
   height: 40px;
-  border: 1px solid #000;
+  border: 1px solid var(--cor-branca);
   background-color: var(--cor-branca);
 }
