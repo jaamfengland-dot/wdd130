@@ -7,11 +7,11 @@
 
 :root {
   --cor-primaria: #055a05;
-  --cor-secundaria: #f4a261;
+  --cor-secundaria: #e71818;
   --cor-destaque1: #264653;
   --cor-destaque2: #e9c46a;
   --cor-branca: #ffffff;
-  --cor-cinza-claro: #e0e0e0; /* Mantida para o fundo dos blocos do wireframe */
+  --cor-cinza-claro: #e0e0e0; 
 
   --fonte-titulo: "Times New Roman", Georgia, serif;
   --fonte-body: Arial, Helvetica, sans-serif;
@@ -53,15 +53,15 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--cor-destaque1); /* Usando a variável */
+  color: var(--cor-destaque1);
   background-color: var(--cor-branca);
   padding: 0.5rem 1rem;
   border: 1px solid var(--cor-destaque1);
 }
 
-/* ❌ CORREÇÃO: Sobreposição do Hero */
+
 .hero {
-  position: relative; /* OBRIGATÓRIO: Pai relativo */
+  position: relative; 
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid var(--cor-destaque1);
@@ -74,23 +74,23 @@ nav a {
 }
 
 .hero h1 {
-  position: absolute; /* OBRIGATÓRIO: Filho absoluto */
+  position: absolute; 
   top: 20px;
   left: 50%;
-  transform: translateX(-50%); /* Centraliza o título perfeitamente por cima da imagem */
-  color: var(--cor-primaria);  /* Usando a variável */
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo leve para não sumir na foto */
+  transform: translateX(-50%); 
+  color: var(--cor-primaria);  
+  background-color: rgba(255, 255, 255, 0.8); 
   padding: 5px 15px;
   border-radius: 4px;
 }
 
 .hero article {
-  position: absolute; /* OBRIGATÓRIO: Filho absoluto */
-  bottom: 20px;       /* Posiciona na parte de baixo do banner */
+  position: absolute; 
+  bottom: 20px;       
   left: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Fundo para legibilidade */
-  border: 1px solid var(--cor-secundaria);   /* Usando a variável */
+  background-color: rgba(255, 255, 255, 0.9); 
+  border: 1px solid var(--cor-secundaria);   
   padding: 15px;
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@ nav a {
 }
 
 .hero article p {
-  color: var(--cor-destaque1); /* Usando a variável */
+  color: var(--cor-destaque1); 
 }
 
 .hero article img {
@@ -116,7 +116,7 @@ nav a {
 }
 
 .historia-section h2 {
-  color: var(--cor-primaria); /* Usando a variável */
+  color: var(--cor-primaria); 
 }
 
 .historia-container {
@@ -128,7 +128,7 @@ nav a {
 .historia-container p {
   flex: 1;
   text-align: justify;
-  color: var(--cor-destaque1); /* Usando a variável */
+  color: var(--cor-destaque1); 
 }
 
 .img-historia {
@@ -145,7 +145,7 @@ nav a {
 }
 
 .aventura-section h2 {
-  color: var(--cor-primaria); /* Usando a variável */
+  color: var(--cor-primaria); 
 }
 
 .galeria {
@@ -170,12 +170,12 @@ nav a {
 .galeria figcaption {
   margin-top: 5px;
   font-size: 14px;
-  color: var(--cor-destaque1); /* Usando a variável */
+  color: var(--cor-destaque1); 
 }
 
-/* FOOTER (Rodapé) */
+/* FOOTER rodapé */
 footer {
-  background-color: var(--cor-secundaria); /* Usando a variável */
+  background-color: var(--cor-secundaria); 
   border: 1px solid var(--cor-destaque1);
   display: flex;
   justify-content: space-between;
@@ -184,9 +184,9 @@ footer {
 }
 
 footer p {
-  color: var(--cor-branca); /* Usando a variável */
+  color: var(--cor-destaque1); 
+  font-weight: bold; 
 }
-
 .socialmedia {
   display: flex;
   gap: 10px;
