@@ -45,8 +45,7 @@ nav, p, section, article {
   text-align: center;
   opacity: 0.7;
   background-color: var(--cor-destaque1);
-  color: #fff;
-}
+  color: var(--cor-branca);
 
 .hero article {
   position: absolute;
@@ -71,7 +70,7 @@ nav, p, section, article {
   --cor-secundaria: #f4a261;
   --cor-destaque1: #264653;
   --cor-destaque2: #e9c46a;
-  --cor-branca: #ffffff;
+  color: var(--cor-branca);
 
   --fonte-titulo: "Times New Roman", Georgia, serif;
   --fonte-body: Arial, Helvetica, sans-serif;
@@ -85,14 +84,14 @@ header {
 
     align-items: center;
 
-    background-color: steelblue;
+    background-color: var(--cor-destaque1);
 
     padding: 1rem;
 }
 nav a {
     text-decoration: none;
 
-    color: white;
+    color: var(--cor-branca);
 
     font-weight: bold;
 
