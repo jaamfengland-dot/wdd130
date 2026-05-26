@@ -17,9 +17,13 @@ nav ul {
     align-items: center;
 }
 
+nav li {
+flex :1 1 auto;
+
+}
 nav a {
     display: block;
-    color: #fff;
+    color: #169222;
     text-align: center;
     padding: 1rem;
     text-decoration: none;

@@ -34,11 +34,9 @@ nav, p, section, article {
   position: relative;
 }
 .hero article img {
-    display: block;
-    width: 100%;
+    width: 150px;
     height: auto;
-    float: right
-  }
+}
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -54,7 +52,7 @@ nav, p, section, article {
   position: absolute;
   top: 120px;
   right: 20px;
-  float: right
+ 
 }
 
 :root {
@@ -73,4 +71,45 @@ footer {
 .hero article {
   background-color: var(--cor-destaque2);
   padding: 10px;
+}
+header {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    align-items: center;
+
+    background-color: steelblue;
+
+    padding: 1rem;
+}
+nav a {
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    padding: 0.5rem 1rem;
+}
+nav ul {
+    display: flex;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    list-style: none;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 1rem;
 }
