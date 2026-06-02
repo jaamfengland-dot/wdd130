@@ -59,7 +59,6 @@ nav a {
   border: 1px solid var(--cor-destaque1);
 }
 
-
 .hero {
   position: relative; 
   width: 100%;
@@ -161,7 +160,7 @@ nav a {
 }
 
 .galeria img {
-  width: 100%;
+  width: 43%;
   height: auto;
   border: 1px solid var(--cor-destaque1);
   background-color: var(--cor-cinza-claro);
