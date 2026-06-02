@@ -17,10 +17,10 @@
         <img src="imagens/logo.png" alt="Logotipo da Corredeiras" width="150">
         <nav>
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="passeios.html">Viagens</a></li>
-                <li><a href="sobre.html">Fale Conosco</a></li>
+                <a href="index.html">Página Inicial</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="passeios.html">Passeios</a>
+                <a href="contato.html">Fale Conosco</a>
             </ul>
         </nav>
     </header>
@@ -32,40 +32,39 @@
         <h5>+55 (23) 9924363-2343</h5>
         <h5> Corredeiras@gmail.com</h5>
         <form>
+
             <label for="nome-completo">Nome:</label>
             <input type="text" id="nome-completo" name="nome-completo" required>
+
             <label for="email-do-usuario">E-mail:</label>
             <input type="email" id="email-do-usuario" name="email-do-usuario" required>
 
+            <fieldset>
+                <legend>Propósito da Mensagem</legend>
+
+                <input type="radio" id="duvida" name="assunto" value="duvida">
+                <label for="duvida">Dúvida Geral</label>
+
+                <input type="radio" id="reserva" name="assunto" value="reserva">
+                <label for="reserva">Pergunta sobre Reserva</label>
+
+                <input type="radio" id="sugestao" name="assunto" value="sugestao">
+                <label for="sugestao">Sugestão</label>
+            </fieldset>
+
+            <label for="feedback">Mensagem</label>
+            <textarea id="feedback" name="feedback" rows="5"></textarea>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">
+                Por favor, me inscreva na newsletter mensal
+            </label>
+
+            <button type="submit">Entrar em Contato!</button>
+
+            <section class="aventura-section">
+
         </form>
-
-        <fieldset>
-            <legend>Propósito da Mensagem</legend>
-
-            <input type="radio" id="duvida" name="assunto" value="duvida">
-            <label for="duvida">Dúvida Geral</label>
-
-            <input type="radio" id="reserva" name="assunto" value="reserva">
-            <label for="reserva">Pergunta sobre Reserva</label>
-
-            <input type="radio" id="sugestao" name="assunto" value="sugestao">
-            <label for="sugestao">Sugestão</label>
-        </fieldset>
-
-        <input type="checkbox" id="newsletter" name="newsletter">
-
-        <label for="newsletter">
-            Por favor, me inscreva na newsletter mensal
-        </label>
-        </select>
-
-        <label for="feedback">Mensagem</label>
-
-        <textarea id="feedback" name="feedback" rows="5" placeholder="Digite aqui">
-    </textarea>
-
-        <button type="submit">Entrar em Contato! </button <section class="aventura-section">
-
         <h2> Estamos aqui para servi-lo!</h2>
         <div class="galeria">
             <figure>
@@ -103,7 +102,7 @@
 
     <footer>
         <p>© 2026 Corredeiras | João Augusto </p>
-        <nav class="socialmedia">
+        <nav class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook.svg" alt="Ícone do Facebook">
             </a>
