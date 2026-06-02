@@ -28,10 +28,10 @@ header, main, footer {
   margin: 20px auto;
 }
 
-h1, h2 {
+h1, h2 , h5 {
   font-family: var(--fonte-titulo);
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 
 /* HEADER (Cabeçalho) */
