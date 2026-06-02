@@ -187,14 +187,18 @@ footer p {
   color: var(--cor-destaque1); 
   font-weight: bold; 
 }
-.socialmedia {
+.redes-sociais {
   display: flex;
   gap: 10px;
 }
 
-.socialmedia img {
+.redes-sociais img {
   width: 40px;
   height: 40px;
   border: 1px solid var(--cor-branca);
   background-color: var(--cor-branca);
+}
+
+.mapa {
+  border: 0;
 }
