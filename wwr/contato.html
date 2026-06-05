@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fale Conosco Corredeiras Rafting</title>
     <meta name="description"
         content="Entre em contato com a Corredeiras Rafting para tirar dúvidas, fazer reservas ou enviar sugestões sobre nossas aventuras de rafting.">
@@ -27,10 +27,12 @@
 
     <main>
         <h1>Fale Conosco - Corredeiras Rafting</h1>
+
         <p>345 Vila Lisboa</p>
         <p>Campinas - São Paulo</p>
         <p>+55 (23) 99243-6234</p>
         <p>corredeiras@gmail.com</p>
+
         <form>
 
             <label for="nome-completo">Nome:</label>
@@ -42,7 +44,7 @@
             <fieldset>
                 <legend>Propósito da Mensagem</legend>
 
-                <input type="radio" id="duvida" name="assunto" value="duvida">
+                <input type="radio" id="duvida" name="assunto" value="duvida" required>
                 <label for="duvida">Dúvida Geral</label>
 
                 <input type="radio" id="reserva" name="assunto" value="reserva">
@@ -53,66 +55,78 @@
             </fieldset>
 
             <label for="feedback">Mensagem</label>
-            <textarea id="feedback" name="feedback" rows="5"></textarea>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
 
             <input type="checkbox" id="newsletter" name="newsletter">
             <label for="newsletter">
                 Por favor, me inscreva na newsletter mensal
             </label>
+
             <button type="submit">Entrar em Contato!</button>
 
         </form>
+
         <section class="aventura-section">
 
-            <h2> Estamos aqui para servi-lo!</h2>
+            <h2>Estamos aqui para servi-lo!</h2>
+
             <div class="galeria">
-                <figure>
-                    <img src="imagens/pablo.jpg" alt="perfil do funcionario 1">
-                    <figcaption>Paulo Escobar </figcaption>
-                    <figcaption>Diretor de Markting </figcaption>
 
+                <figure>
+                    <img src="imagens/pablo.jpg" alt="Perfil do funcionário Paulo Escobar">
+                    <figcaption>
+                        Paulo Escobar<br>
+                        Diretor de Marketing
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="imagens/carlos.jpg" alt="perfil do funcionario 2">
-                    <figcaption>Carlos Drumonde</figcaption>
-                    <figcaption>Especialista em Rafting </figcaption>
-
+                    <img src="imagens/carlos.jpg" alt="Perfil do funcionário Carlos Drumonde">
+                    <figcaption>
+                        Carlos Drumonde<br>
+                        Especialista em Rafting
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="imagens/micaela.jpg" alt="perfil do funcionario 2">
-                    <figcaption>Micaela Jackson</figcaption>
-                    <figcaption>Gestora de administração </figcaption>
-
-
+                    <img src="imagens/micaela.jpg" alt="Perfil da funcionária Micaela Jackson">
+                    <figcaption>
+                        Micaela Jackson<br>
+                        Gestora de Administração
+                    </figcaption>
                 </figure>
+
             </div>
+
         </section>
 
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2239685.768010581!2d-47.68863513224167!3d-22.787425258491034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1780411634528!5m2!1spt-BR!2sus"
-                width="600" height="450" ; allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
 
     </main>
 
     <footer>
-        <p>© 2026 Corredeiras | João Augusto </p>
+        <p>© 2026 Corredeiras | João Augusto</p>
+
         <nav class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook.svg" alt="Ícone do Facebook">
             </a>
+
             <a href="https://linkedin.com">
                 <img src="imagens/linkedin.svg" alt="Ícone do LinkedIn">
             </a>
+
             <a href="https://instagram.com">
                 <img src="imagens/instagram.svg" alt="Ícone do Instagram">
             </a>
         </nav>
     </footer>
+
 </body>
 
 </html>
