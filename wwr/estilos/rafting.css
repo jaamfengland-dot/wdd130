@@ -166,6 +166,7 @@ footer {
 }
  
 /* Sobre nós (sobre.html) */
+
 .historia-section {
     padding: 40px 20px;
     max-width: 900px;
@@ -192,6 +193,7 @@ footer {
 }
  
 /* Aventura (sobre.html, contato.html) */
+
 .aventura-section {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
@@ -205,6 +207,7 @@ footer {
 }
  
 /*  CTA (passeios.html) */
+
 .cta {
     background-color: #c4a882;
     text-align: center;
@@ -224,6 +227,7 @@ footer {
 }
  
 /* Passeios (passeios.html) */
+
 .passeios {
     padding: 40px 20px;
     max-width: 900px;
@@ -297,6 +301,7 @@ tr:nth-child(even) {
 }
  
 /* Contato (contato.html) */
+
 .info-empresa {
     text-align: center;
     padding: 30px 20px 10px;
