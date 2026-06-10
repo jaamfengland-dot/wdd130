@@ -135,7 +135,7 @@ footer {
     object-fit: cover;
 }
  
-/* Destaque (index.html) */
+/* Destaque e newsletter (index.html) */
 .destaque {
     background-color: #82aac4;
     display: flex;
@@ -163,6 +163,34 @@ footer {
     border: 1px solid white;
     color: white;
     padding: 6px 14px;
+}
+.newsletter {
+  background-color: #sua-cor;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 0.5rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 0.75rem;
+  background-color: #sua-cor-destaque;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
  
 /* Sobre nós (sobre.html) */
