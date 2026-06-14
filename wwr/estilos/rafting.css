@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -46,6 +47,7 @@ footer {
 .socialmedia {
     display: flex;
     gap: 8px;
+
 }
  
 .socialmedia img {
@@ -186,7 +188,7 @@ footer {
 
 .newsletter button {
   padding: 0.75rem;
-  background-color: #sua-cor-destaque;
+  background-color:white
   color: white;
   border: none;
   border-radius: 4px;
